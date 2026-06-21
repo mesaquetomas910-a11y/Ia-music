@@ -1,0 +1,70 @@
+name: ia_music
+description: AI Music Studio Pro - Generate, record, and mix music with AI
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Audio Recording and Playback
+  record: ^4.4.4
+  audioplayers: ^5.2.0
+  
+  # Firebase
+  firebase_core: ^2.24.0
+  firebase_storage: ^11.4.0
+  cloud_firestore: ^4.13.0
+  firebase_auth: ^4.10.0
+  
+  # AI and ML
+  google_generative_ai: ^0.3.0
+  tflite_flutter: ^0.10.0
+  
+  # UI
+  cupertino_icons: ^1.0.2
+  material_design_icons_flutter: ^7.0.7296
+  
+  # State Management
+  provider: ^6.0.0
+  
+  # Audio Processing
+  ffmpeg_kit_flutter: ^4.5.1
+  
+  # Storage and File Handling
+  path_provider: ^2.1.0
+  file_picker: ^5.5.0
+  
+  # HTTP for API calls
+  http: ^1.1.0
+  
+  # Utilities
+  intl: ^0.18.1
+  uuid: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.0
+  json_serializable: ^6.7.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/models/
+  
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
